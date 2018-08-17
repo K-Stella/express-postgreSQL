@@ -49,6 +49,18 @@ function insertDb(client,commandString,values){
    })
  };
 
+ function selectDbById(client,id,callback){
+   client.query("select * from personinfo where id=$1",id,function(err,result){
+     if(err){
+       console.log("select error:",err.message);
+       callback(err,null);
+       return;
+     }else{
+       callback(null,result);
+     }
+   })
+ };
+
  /*
   *  根据id删除数据
   *  @client 连接数据库
@@ -67,7 +79,11 @@ function insertDb(client,commandString,values){
    });
  };
 
-
+ /*
+  *  根据id更新数据
+  *  @client 连接数据库
+  *  @callback 为了将结果回调出去
+  */
 function updateById(client,id,data,callback){
   console.log(id);
   console.log(data);
@@ -87,6 +103,7 @@ function updateById(client,id,data,callback){
 
 module.exports = {
   insertDb,
+  selectDbById,
   selectAllDb,
   deleteById,
   updateById

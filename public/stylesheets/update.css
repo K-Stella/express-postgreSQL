@@ -1,0 +1,84 @@
+body {
+  height: 100%;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.from-layout{
+  height: auto;
+  width: auto;
+  padding: 1rem 0 1rem 0;
+  text-align: center;
+  background-color: white;
+  margin: 0 auto; /*水平居中*/
+  /*相对自己当前进行定位*/
+  /* position: relative;
+  top: 50%; */
+  color: #29606b;
+  box-shadow:8px 8px 5px 0 rgba(0,0,0,.2),
+  0 2px 2px 2px rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+.from-title{
+
+}
+.from-content{
+  padding: 0rem 0 2rem 0;
+}
+
+.formFont{
+  font-family: "Lucida Family";
+  font-size:1.2em;
+  text-align: center;
+}
+
+.block{
+  display: block;
+  margin:18px 0;
+}
+
+.commit{
+  width: 100%;
+  /* display: block;
+  height: 35px;
+  background-color: #b0d9d4;
+  color: #29606b;
+  font-weight: bold;
+  margin-left: 58.5%; */
+}
+
+.add-sex-box{
+  width: 43%;
+}
+
+.add-commit{
+  width: 20%;
+  display: block;
+  height: 35px;
+  background-color: #b0d9d4;
+  color: #29606b;
+  font-weight: bold;
+  margin-left: 56.5%;
+}
+.add-commit:hover{
+  background: #29606b;
+  color: #b0d9d4;
+}
+
+.text_red{
+  color: red;
+}
+
+label{
+  display: inline-block;
+  width: 12%;
+  text-align: right;
+  padding: 0.25%;
+}
+input,textarea{
+  vertical-align: top;
+  border-radius:0.2rem;
+  border:0.05rem solid #DBDBDB;
+  width: 40%;
+  height: 25px;
+}
