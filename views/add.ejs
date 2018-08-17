@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>addSDK</title>
+  <link rel="stylesheet" href="/stylesheets/addform.css" />
+</head>
+<body>
+  <div class="from-layout">
+    <div class="from-title">
+      <h1 align="center" style="font-family:Times New Roman">Add</h1>
+    </div>
+    <div class="from-content">
+      <form action="/v1/person" method="post" class="formFont">
+        <div class="block">
+          <label>Id：</label>
+          <input type="text" name="id" value="<%=id %>"
+          readonly="readonly">
+        </div>
+        <div class="block">
+          <label><span class="text_red">*</span>Name：</label>
+          <input type="text" name="name">
+        </div>
+        <div class="block">
+        <label style="float: left;margin-left: 23%;">Sex：</label>
+        <div class="add-sex-box">
+          <input id="male" type="radio" checked="checked" name="sex" style="width: 0%;" value="male"><span>男</span></input>
+          <input id="female" type="radio" name="sex" class="add-sex" style="width: 0%;" value="female"><span>女</span></input>
+        </div>
+        </div>
+        <div class="block">
+          <label>Age：</label>
+          <input type="text" name="age">
+        </div>
+        <div class="commit">
+          <input type="submit" value="Commit" class="add-commit">
+        <div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

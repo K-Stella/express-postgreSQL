@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PostgreSQL</title>
+</head>
+<body>
+  <h1>PostgreSQL</h1>
+  <p><b class="add">+</b><a title="addSDK" href="/v1/person" class="addFont">新增</a></p>
+  <table style="text-align: center;">
+    <thead>
+      <tr>
+        <th width="8%">Name</th>
+        <th width="15%">Id</th>
+        <th width="8%">Sex</th>
+        <th width="8%">Age</th>
+        <th width="10%">Mainpulate</th>
+      <tr>
+    </thead>
+    <tr>
+      <% for(var i=0;i<items.length;i++){ %>
+        <td><%=items[i].data.name %></td>
+        <td><%=items[i].id %></td>
+        <td><%=items[i].data.sex %></td>
+        <td><%=items[i].data.age %></td>
+        <td>
+          <a href="javascript:void(0);"  onclick="#" class="del" >删除</a>
+          <a href="#" class="editfont">修改</a>
+        </td>
+        <tr></tr>
+      <% }%>
+    </tr>
+  </table>
+</body>
+</html>
